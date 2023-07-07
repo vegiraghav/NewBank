@@ -19,6 +19,8 @@ public class NewBank {
 		
 		Customer christina = new Customer();
 		christina.addAccount(new Account("Savings", 1500.0));
+		christina.addAccount(new Account("Checking", 500.0));//test data AP
+		christina.addAccount(new Account("Main", 10.0));//test data AP
 		customers.put("Christina", christina);
 		
 		Customer john = new Customer();
