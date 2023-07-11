@@ -10,6 +10,16 @@ public class Account {
 		this.openingBalance = openingBalance;
 	}
 	
+	public void deposit( double amount){
+		this.openingBalance += amount;
+	}
+	public void withdraw(double amount){
+		this.openingBalance -= amount;
+	}
+	public void move(double amount, Account a){
+		this.withdraw(amount);
+		a.deposit(amount);
+	}
 	public String toString() {
 		return (accountName + ": " + openingBalance);
 	}
